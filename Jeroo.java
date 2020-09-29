@@ -37,10 +37,10 @@ public class Jeroo extends JerooBase {
         }
         turn(RIGHT);
         while(isClear(AHEAD)){
-          hop();
           if(isFlower(HERE)){
             return;
           }
+          hop();
         }
         turn(LEFT);
       }
